@@ -1,4 +1,3 @@
-
 import { createContext, useContext, useState, useEffect } from 'react';
 
 // Types
@@ -7,6 +6,7 @@ type User = {
   name: string;
   email: string;
   role: 'user' | 'admin';
+  profileImage?: string; // Added this optional property
 };
 
 type AuthContextType = {
@@ -28,14 +28,16 @@ const sampleUsers = [
     name: 'John Doe',
     email: 'user@example.com',
     password: 'password',
-    role: 'user' as const
+    role: 'user' as const,
+    profileImage: '/placeholder.svg' // Added default image
   },
   {
     id: '2',
     name: 'Admin User',
     email: 'admin@example.com',
     password: 'admin123',
-    role: 'admin' as const
+    role: 'admin' as const,
+    profileImage: '/placeholder.svg' // Added default image
   }
 ];
 
@@ -98,7 +100,8 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
         id: (sampleUsers.length + 1).toString(),
         name,
         email,
-        role: 'user' as const
+        role: 'user' as const,
+        profileImage: '/placeholder.svg' // Added default image
       };
       
       // Add to sample users (this is just for demo)

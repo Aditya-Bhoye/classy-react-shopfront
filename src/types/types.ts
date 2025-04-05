@@ -36,3 +36,11 @@ export type UserProfileType = {
     shipping: AddressType;
   };
 };
+
+export type UserType = {
+  id: string;
+  name: string;
+  email: string;
+  role: 'user' | 'admin';
+  profileImage?: string;
+};
