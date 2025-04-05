@@ -1,8 +1,8 @@
-
 import { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
+import './PreferencesSection.css';
 
 const PreferencesSection = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>(

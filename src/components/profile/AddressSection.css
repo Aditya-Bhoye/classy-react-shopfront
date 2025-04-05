@@ -1,0 +1,53 @@
+
+.addresses-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xl);
+}
+
+.address-card {
+  flex: 1 1 350px;
+  padding: var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  background-color: var(--bg-light);
+}
+
+.address-type {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.address-details p {
+  margin-bottom: var(--spacing-xs);
+}
+
+.address-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.form-row {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .addresses-container {
+    flex-direction: column;
+  }
+}

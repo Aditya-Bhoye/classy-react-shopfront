@@ -1,0 +1,80 @@
+
+.profile-info {
+  display: flex;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.profile-avatar {
+  flex-shrink: 0;
+}
+
+.avatar-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--primary-light);
+}
+
+.avatar-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-details {
+  flex-grow: 1;
+}
+
+.profile-field {
+  margin-bottom: var(--spacing-sm);
+}
+
+.field-label {
+  font-weight: 600;
+  margin-right: var(--spacing-sm);
+  color: var(--text-light);
+}
+
+.field-value {
+  font-weight: 500;
+}
+
+.profile-edit-form,
+.password-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.form-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.password-section {
+  margin-top: var(--spacing-lg);
+}
+
+.collapsible-icon {
+  transition: transform 0.3s ease;
+}
+
+[data-state="open"] .collapsible-icon {
+  transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+  .profile-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-avatar {
+    margin-bottom: var(--spacing-md);
+  }
+}

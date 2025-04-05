@@ -1,0 +1,51 @@
+
+.no-orders {
+  text-align: center;
+  padding: var(--spacing-xl);
+  color: var(--text-light);
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-delivered {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: #16a34a;
+}
+
+.status-shipped {
+  background-color: rgba(14, 165, 233, 0.1);
+  color: var(--primary-color);
+}
+
+.status-processing {
+  background-color: rgba(250, 204, 21, 0.1);
+  color: #ca8a04;
+}
+
+.status-pending {
+  background-color: rgba(100, 116, 139, 0.1);
+  color: var(--text-light);
+}
+
+.order-details-expanded {
+  padding: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+  background-color: var(--bg-light);
+  border-radius: var(--border-radius-md);
+}
+
+.order-items-list {
+  list-style: none;
+  margin-top: var(--spacing-sm);
+}
+
+.order-item-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-xs) 0;
+}

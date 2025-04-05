@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { OrderType } from '@/types/types';
 import { sampleOrders } from '@/data/sampleData';
@@ -6,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import './OrdersSection.css';
 
 const OrdersSection = () => {
   const [orders, setOrders] = useState<OrderType[]>([]);
