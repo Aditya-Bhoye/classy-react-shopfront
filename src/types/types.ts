@@ -18,3 +18,21 @@ export type OrderType = {
   date: string;
   status: 'Pending' | 'Processing' | 'Shipped' | 'Delivered';
 };
+
+export type AddressType = {
+  street: string;
+  city: string;
+  state: string;
+  zipCode: string;
+  country: string;
+};
+
+export type UserProfileType = {
+  name: string;
+  email: string;
+  profileImage?: string;
+  addresses: {
+    billing: AddressType;
+    shipping: AddressType;
+  };
+};
